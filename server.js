@@ -4,7 +4,7 @@ const app = express();
 
 
 const mochUserData=[
-    {name:'Marck'};
+    {name:'Marck'},
     {name:'Jill'}
 ]
 app.get('/user', function(req,res){
@@ -14,6 +14,7 @@ app.get('/user', function(req,res){
         users:mockUserData
     })
 })
+console.log(app);
 app.listen(8000,function(){
     console.log('Server is running')
 })
