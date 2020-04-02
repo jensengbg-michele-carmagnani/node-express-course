@@ -18,7 +18,7 @@ app.get('/user', function(req,res){
 })
 
 // Colons are used as variables that ne viewed in the params 
-app.get('/users/:id'function(req,res){
+app.get('/users/:id',function(req,res){
     console.log(req.params.id)
     res.json({
         success: true,
